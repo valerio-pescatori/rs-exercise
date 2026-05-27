@@ -1,6 +1,6 @@
-mod digital_root2;
-use digital_root2::digital_root;
+mod likes;
+use likes::likes;
 
 fn main() {
-    println!("digital_root: {:?}", digital_root(493193));
+    println!("likes: {:?}", likes(&["Alex", "Jacob", "Mark", "Max", "tizio", "caio", "sempronio"]));
 }
