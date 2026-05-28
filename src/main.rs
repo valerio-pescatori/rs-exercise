@@ -1,6 +1,9 @@
-mod likes;
-use likes::likes;
+mod decode_morse;
+use decode_morse::decode_morse;
 
 fn main() {
-    println!("likes: {:?}", likes(&["Alex", "Jacob", "Mark", "Max", "tizio", "caio", "sempronio"]));
+    // decode_morse("")
+    // decode_morse("   ")
+    // decode_morse("         ")
+    println!("decode_morse: {:?}", decode_morse("   "));
 }
