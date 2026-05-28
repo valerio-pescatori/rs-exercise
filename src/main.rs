@@ -1,9 +1,6 @@
-mod decode_morse;
-use decode_morse::decode_morse;
+mod rgb_to_hex;
+use rgb_to_hex::rgb;
 
 fn main() {
-    // decode_morse("")
-    // decode_morse("   ")
-    // decode_morse("         ")
-    println!("decode_morse: {:?}", decode_morse("   "));
+    println!("rgb: {:?}", rgb(300, 300, 300));
 }
