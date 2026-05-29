@@ -1,6 +1,6 @@
-mod rgb_to_hex;
-use rgb_to_hex::rgb;
+mod first_non_repeating;
+use first_non_repeating::first_non_repeating;
 
 fn main() {
-    println!("rgb: {:?}", rgb(300, 300, 300));
+    println!("first_non_repeating: {:?}", first_non_repeating("ssssss"));
 }
