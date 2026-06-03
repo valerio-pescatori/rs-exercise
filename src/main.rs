@@ -1,10 +1,9 @@
-mod mean_square_error;
-use mean_square_error::solution;
+mod human_readable_time;
+use human_readable_time::make_readable;
 
 fn main() {
-    // [1, 2, 3], [4, 5, 6]
-    println!(
-        "first_non_repeating: {:?}",
-        solution(&[1, 2, 3], &[4, 5, 6])
-    );
+    println!("make_readable: {:?}", make_readable(50));
+    println!("make_readable: {:?}", make_readable(60));
+    println!("make_readable: {:?}", make_readable(70));
+    println!("make_readable: {:?}", make_readable(122));
 }
