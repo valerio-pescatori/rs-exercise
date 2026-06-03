@@ -1,9 +1,6 @@
-mod human_readable_time;
-use human_readable_time::make_readable;
+mod perimeter;
+use crate::perimeter::perimeter;
 
 fn main() {
-    println!("make_readable: {:?}", make_readable(50));
-    println!("make_readable: {:?}", make_readable(60));
-    println!("make_readable: {:?}", make_readable(70));
-    println!("make_readable: {:?}", make_readable(122));
+    println!("perimeter: {:?}", perimeter(7));
 }
