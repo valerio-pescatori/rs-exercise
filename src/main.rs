@@ -1,6 +1,6 @@
-mod perimeter;
-use crate::perimeter::perimeter;
+mod mix;
+use crate::mix::mix;
 
 fn main() {
-    println!("perimeter: {:?}", perimeter(7));
+    println!("mix: {:?}", mix("codewars", "codewars"));
 }
