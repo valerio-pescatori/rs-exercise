@@ -1,7 +1,7 @@
-mod permutations;
-use crate::permutations::permutations;
+mod format_duration;
+use crate::format_duration::format_duration;
 
 fn main() {    
-    println!("permutations: {:?}", permutations("aabb"));
+    println!("format_duration: {:?}", format_duration(3662));
     // aac, aca, a
 }
