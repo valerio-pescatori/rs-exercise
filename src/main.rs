@@ -1,6 +1,15 @@
-mod find_all;
-use crate::find_all::find_all;
+mod social_golfer;
+use crate::social_golfer::valid;
 
 fn main() {
-    println!("find_all: {:?}", find_all(35, 6));
+    let s: Vec<Vec<&str>> = vec![
+         vec!["ABCD", "EFGH", "IJKL", "MNOP", "QRST"], 
+         vec!["AEIM", "BJOQ", "CHNT", "DGLS", "FKPR"],
+         vec!["AGKO", "BIPT", "CFMS", "DHJR", "ELNQ"],
+         vec!["AHLP", "BKNS", "CEOR", "DFXQ", "GJMT"],
+         vec!["AFJN", "BLMR", "CGPQ", "DEKT", "HIOS"]
+    ];
+    // should be false
+
+    println!("valid: {:?}", valid(s));
 }
